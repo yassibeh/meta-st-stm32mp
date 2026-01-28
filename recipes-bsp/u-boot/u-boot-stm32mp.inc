@@ -226,7 +226,7 @@ export_binaries() {
                                             -f auto-conf \
                                             -k "${UBOOT_SIGN_KEYDIR}" \
                                             -o "${FIT_HASH_ALG},${FIT_SIGN_ALG}" \
-                                            -g "${UBOOT_SIGN_IMG_KEYNAME}" \
+                                            -g "${UBOOT_SIGN_KEYNAME}" \
                                             -K "${B}/${config}/u-boot-${devicetree}-${type_suffix}.${binarysuffix}" \
                                             -d /dev/null \
                                             ${UBOOT_MKIMAGE_SIGN_ARGS} \
